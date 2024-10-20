@@ -28,8 +28,4 @@ I discovered the effectiveness of Tailwind CSS in creating responsive layouts qu
 
 3. *Form Validation*: I faced challenges with form validation, realizing it needed feedback for users. I researched JavaScript validation to implement real-time checks in the future.
 
----
 
-## c) Clarity & Coherence
-
-This reflection effectively covers key aspects of the project, from concepts applied to challenges faced. The documentation is clear and organized, providing a comprehensive overview that highlights both technical details and learning outcomes.

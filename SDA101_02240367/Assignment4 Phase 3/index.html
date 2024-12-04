@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshering Dendup Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        .profile-image {
+            clip-path: circle();
+        }
+    </style>
+    <script>
+        // Function to toggle visibility between sections
+        function showSection(sectionId) {
+            // Hide all sections
+            ['mainSection', 'aboutSection', 'educationSection', 'contactSection'].forEach(id => {
+                document.getElementById(id).style.display = 'none';
+                document.getElementById(id + "Link").classList.remove("text-gray-400", "font-semibold");
+            });
+
+            // Show the requested section and highlight the nav link
+            document.getElementById(sectionId).style.display = 'block';
+            document.getElementById(sectionId + "Link").classList.add("text-gray-400", "font-semibold");
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="flex justify-between p-4">
+        <div class="text-xl font-bold">Tshering Dendup</div>
+        <div class="space-x-4">
+            <a href="#" id="mainSectionLink" onclick="showSection('mainSection')" class="hover:text-gray-400">Home</a>
+            <a href="#" id="aboutSectionLink" onclick="showSection('aboutSection')" class="hover:text-gray-400">About</a>
+            <a href="#" id="educationSectionLink" onclick="showSection('educationSection')" class="hover:text-gray-400">Education</a>
+            <a href="#" id="contactSectionLink" onclick="showSection('contactSection')" class="hover:text-gray-400">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div id="mainSection" class="flex items-center justify-center h-screen">
+        <div class="flex flex-row items-center justify-between max-w-7xl mx-auto w-full">
+            <!-- Left Side: Text -->
+            <div class="text-left space-y-6 max-w-lg">
+                <h1 class="text-4xl font-bold">Hello its Me</h1>
+                <h2 class="text-6xl font-bold mt-6">Tshering Dendup</h2>
+                <p class="text-xl mt-4">16/04/2005</p>
+                <p class="text-2xl font-semibold mt-6">And I’m a Software Engineering student</p>
+                <p class="text-lg mt-8 leading-relaxed">
+                    I’m a hard-working person and driven individual who isn’t afraid to face challenges. 
+                    And a person who believes in <span class="font-semibold italic">"consistency is key to success"</span>.
+                </p>
+            </div>
+
+            <!-- Right Side: Profile Image -->
+            <div class="ml-16">
+                <img src="Mii.jpg" alt="Profile Image" class="w-80 h-80 object-cover profile-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section (Initially hidden) -->
+    <div id="aboutSection" class="flex items-center justify-center h-screen" style="display: none;">
+        <div class="flex flex-row items-center justify-between max-w-5xl mx-auto w-full mt-24">
+            <!-- Left Side: Profile Image -->
+            <div class="rounded-full overflow-hidden w-72 h-72">
+                <img src="Mii.jpg" alt="Profile" class="object-cover w-full h-full">
+            </div>
+
+            <!-- Right Side: About Me Text -->
+            <div class="ml-16 text-left max-w-lg">
+                <h2 class="text-4xl font-bold">About Me</h2>
+                <h3 class="text-3xl mt-4">I'm a Software Engineering student</h3>
+                <p class="mt-6 text-xl leading-relaxed">
+                    I’m a student currently pursuing a career in software engineering in the College of Science and Technology. 
+                    I am an enthusiastic, self-motivated, reliable, responsible, and hard-working person. I am a mature team 
+                    worker and adaptable to all challenging situations. I am able to work well both in a team environment as 
+                    well as using my own initiative. I am able to work well under pressure and adhere to strict deadlines.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section (Initially hidden) -->
+    <div id="educationSection" class="flex items-center justify-center h-screen" style="display: none;">
+        <div class="flex flex-row items-center justify-between max-w-5xl mx-auto w-full mt-24">
+            <!-- Left Side: Education Image -->
+            <div class="w-72 h-72">
+                <img src="graduation cap.jpg" alt="Graduation Cap" class="object-cover w-full h-full">
+            </div>
+
+            <!-- Right Side: Education Text -->
+            <div class="ml-16 text-left max-w-lg">
+                <p class="mt-6 text-xl leading-relaxed">
+                    If I talk about my education, I first completed my primary to lower education at Ziloen Namgayling Lower Secondary School.
+                    After graduating from Ziloen, I went to Yangchenphug Higher Secondary School. After completing my middle school, I had to
+                    choose one stream out of three: Science, Commerce, and Arts. I decided to take Commerce. After completing my higher education,
+                    I pursued Software Engineering at the College of Science and Technology. As I was interested in that field, I was aware that the
+                    world is currently being led by technology, and how it helps people solve problems and make life easier and more efficient.
+                    Now, I am pursuing a career in Software Engineering, with the goal of helping people technologically and making a positive impact
+                    on the environment.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me Section (Initially hidden) -->
+    <div id="contactSection" class="flex items-center justify-center h-screen" style="display: none;">
+        <div class="max-w-md w-full space-y-6 text-center">
+            <h2 class="text-4xl font-bold">Contact Me</h2>
+
+            <!-- Centered Contact Items -->
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="material-icons">email</span>
+                    <span>Email: tdendup166@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="material-icons">phone</span>
+                    <span>Contact Number: 17487319</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="material-icons">location_on</span>
+                    <span>Location: Bhutan, Chukha</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
